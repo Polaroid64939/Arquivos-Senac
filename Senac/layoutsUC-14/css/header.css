@@ -1,0 +1,26 @@
+.header{
+    min-height: 10vh;
+    width: 100%;
+    background-color:rgb(4, 8, 8) ;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.lista-menu{/*ul*/
+    display: flex; 
+    list-style-type:none;
+    font-size: 1.6rem;
+}
+.item-menu{ /*li*/
+    padding: 10px 15px;
+}
+.link-menu{/*a*/
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+#icone-menu{
+    font-size:2rem;
+    display: none;
+}

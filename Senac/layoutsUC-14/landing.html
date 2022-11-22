@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo-txt">Logo Site</h1>
+
+        <div>
+            <span id="icone-menu" class="material-symbols-outlined">menu</span>
+        </div>
+
+        <nav class="menu">
+            <ul class="lista-menu">
+                <li class="item-menu">
+                    <a href="#doces" class="link-menu">Doces</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#bolos" class="link-menu">Bolos</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#" class="link-menu">Clientes</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#" class="link-menu">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrossel" id="carrossel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/mb05.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mb01.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mb02.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mb03.gif" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mb04.gif" alt="">
+                  </div>
+                </div>
+            </div>
+            
+            <h2 class="titulo-carrossel">Clona Cartão Oficial</h2>
+            <a href="https://www.youtube.com/watch?v=FCm88wOgw7s" 
+            target="https://www.youtube.com/watch?v=FCm88wOgw7s"class="link-carrossel">Clone o seu aqui!</a>
+
+        
+        </section>
+
+        <section class="kit">
+            <div class="div-kit">
+                <img src="img/ladrao.png" width="113px" class="img-kit">
+                <h3 class="titulo-kit">99.9999.99 Cartões Clonados</h3>
+            </div>
+            <div class="div-kit">
+                <img src="img/mb11.gif" width="180px" class="img-kit">
+                <h3 class="titulo-kit">1888.1827.68 Bancos Hackeados</h3>
+            </div>
+            <div class="div-kit">
+                <img src="img/Casadas.gif" width="87px" class="img-kit">
+                <h3 class="titulo-kit">99+ Mulheres casadas</h3>
+            </div>
+            <div class="div-kit">
+                <img src="img/corno.gif" width="28%" class="img-kit">
+                <h3 class="titulo-kit">99+ Homens Cornados com sucesso</h3>
+            </div>
+        </section>
+        <section class="bolos" id="bolos">
+            <div class="div-bolos">
+                <img src="img/mb06.gif" alt="" class="img-bolos">
+            </div>
+            <div class="div-bolos">
+                <h3>Clonagens recentes</h3>
+                <ul>
+                    <li>Ana conda</li>
+                    <li>Pedro alexandre</li>
+                    <li>Paulo miguel</li>
+                    <li>Sarah dos santos</li>
+                    <li>Marcelly dos santos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bolos" id="doces">
+            <div class="div-bolos" style="order: 2;">
+                <img src="img/mb09.gif" alt="" class="img-bolos">
+            </div>
+            <div class="div-bolos">
+                <h3>Proximos Da Lista</h3>
+                <ul>
+                    <li>Mark Zuckerberg</li>
+                    <li>Willian Musk</li>
+                    <li>Arnold Stalone</li>
+                    <li>Edwins</li>
+                    <li>Sebrae</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="div-footer">
+            <h1 class="txt-footer">S-Eventos</h1>
+        </div>
+        <div class="div-footer">
+            <ul class="lista-footer">
+                <li class="item-footer">
+                    <img src="img/Facebook_logo.png" alt="" class="img-footer"></li>
+                <li class="item-footer">
+                    <img src="img/Instagram-Icon.png" alt="" class="img-footer"></li>
+                <li class="item-footer">
+                    <img src="img/twitter.png" alt="" class="img-footer"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script> 
+        const menu = document.getElementById('icone-menu');
+        const link = document.getElementsByClassName('item-menu');
+   
+        menu.addEventListener('click',()=>{
+            for(i=0;i<=link.length;i++){
+                link[i].classList.toggle('ativar');
+            }
+        })
+    </script>   
+</body>
+</html>

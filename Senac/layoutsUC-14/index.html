@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Exemplo 03  - Media Query</title>
+</head>
+<style>
+
+    .fonte{font-family: 'Source Sans Pro', sans-serif;}
+
+    *{margin: 0;padding: 0; box-sizing: border-box;}
+    .header{
+        min-height: 10vh;
+        width: 100vw;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+    .lista-menu{/*ul*/
+        display: flex; 
+        list-style-type:none;
+        font-size: 1.3rem;
+    }
+    .item-menu{ /*li*/
+        padding: 10px 15px;
+    }
+    .link-menu{/*a*/
+        text-decoration: none;
+        color: white; 
+    }
+    #icone-menu{
+        font-size:2rem;
+        display: none;
+    }
+    .bloco1{grid-template-columns:repeat(1fr 1fr);}
+    .div-bloco1{
+        width: 250px;
+        height:400px;
+        margin:0 auto;
+        border: 1px solid rgb(240, 240, 240);
+    }
+    .img-bloco1{
+        width: 100%;
+        height: 220px;
+        border-radius: 50%;
+    }
+    .bloco2{
+        display: grid;
+        grid-template-columns:1fr 1.5fr;
+        grid-template-rows: auto;
+        background-color: rgb(10, 92, 2);
+        justify-content: center;
+        align-items: center;
+    }
+    .img-bloco2{/*Ajuste de img do bloco 2*/
+        width: 90%;
+        height: 450px;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+    }
+    .titulo-bloco2{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .p-bloco2{
+        font-size: 1.4rem;
+        line-height: 36px;
+        text-align: justify;
+        padding: 15px;
+    }
+
+    .bloco3{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+        gap: 10px;   
+    }
+    .div-bloco3{
+        display: block;
+        height: 180px;
+        margin: 0 auto;
+        position: relative;
+        width: 340px;
+    }
+    .txt-bloco3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: antiquewhite;
+        font-size: 1.8rem;
+        transform: translate(-50%,-50%);
+    }
+    .img-bloco3{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        filter: brightness(40%);
+    }
+
+    @media screen  and (max-width:998px){
+        .header{
+            flex-direction: column;
+        }
+        .bloco1{ grid-template-columns:1fr 1fr;}
+        .div-bloco1{
+            max-width: 90%;
+            height: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+        .bloco2{
+            grid-template-columns: auto auto;
+            max-width: 90%;
+            display: block;
+            margin: 0 auto;
+        }
+        .bloco3{grid-template-columns: auto auto;}
+        .div-bloco3{width: 90%;display: block;margin: 0 auto;}
+
+    }
+
+    @media screen  and (max-width:768px){
+        .header{flex-direction: column;}
+        .lista-menu{flex-direction: column;text-align: center;}
+        #icone-menu{display: block;}
+        .item-menu{display: none;}
+        .ativar{display: block;}
+        .item-menu:hover{background-color: aquamarine; 
+            width:100vw ; color: black;
+        }
+        .link-menu:hover{color: black;}
+        #icone-menu:hover{background-color: aqua;}
+        .bloco1{ grid-template-columns:1fr;} 
+        .bloco2{grid-template-columns:1fr;}
+        .p-bloco2{font-size: 1rem; line-height: 25px;}
+        .img-bloco2{height: 220px;}
+        .bloco3{grid-template-columns: 1fr;}
+    }
+    @media screen and (max-width:998px){
+        .header{flex-direction: column; width: 100vw;}
+        .bloco1{grid-template-columns:1fr;}
+        .bloco2{grid-template-columns:1fr;}
+        .bloco3{grid-template-columns: 1fr;}
+        
+    }
+</style>
+<body>
+    <header class="header">
+        <h1 class="logo-txt">Logo Site</h1>
+
+        <div>
+            <span id="icone-menu" class="material-symbols-outlined">menu</span>
+        </div>
+
+        <nav class="menu">
+            <ul class="lista-menu">
+                <li class="item-menu">
+                    <a href="../layoutsUC-14/exemplo05.html" class="link-menu">link01</a>
+                </li>
+                <li class="item-menu">
+                    <a href="../layoutsUC-14/exemplo03.html" class="link-menu">link02</a>
+                </li>
+                <li class="item-menu">
+                    <a href="../layoutsUC-14/exemplo05.html" class="link-menu">link03</a>
+                </li>
+                <li class="item-menu">
+                    <a href="../layoutsUC-14/landing.html" class="link-menu">link04</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="bloco1">
+            <div class="div-bloco1">
+                <img src="img/mb01.gif" alt="" class="img-bloco1">
+                <h3 class="titulo-bloco1"></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat deserunt esse corrupti harum voluptatibus, minima quae velit quibusdam hic molestiae vero reprehenderit iure nobis reiciendis fugiat eos iusto facilis.</p>
+            </div>
+            <div class="div-bloco1">
+                <img src="img/mb02.gif" alt="" class="img-bloco1">
+                <h3 class="titulo-bloco1"></h3>
+                <p>Modi exercitationem possimus iste fuga dolore itaque necessitatibus voluptatum, a ipsam magnam voluptates molestiae natus nam odit ratione dolor sunt quae magni sit voluptate ut aut corrupti officia dolorum? Vero?</p>
+            </div>
+            <div class="div-bloco1">
+                <img src="img/mb03.gif" alt="" class="img-bloco1">
+                <h3 class="titulo-bloco1"></h3>
+                <p>Dolore, necessitatibus facere. Omnis dolorum beatae, illo quo fugit, vitae perspiciatis labore molestias neque rerum eum. Ea cumque pariatur deserunt placeat perferendis quasi, quis veniam non ratione minus molestias delectus?</p>
+            </div>
+            <div class="div-bloco1">
+                <img src="img/mb04.gif" alt="" class="img-bloco1">
+                <h3 class="titulo-bloco1"></h3>
+                <p>Sint nam error pariatur tempore ipsam ipsa nihil magnam, cumque, necessitatibus, expedita perspiciatis rerum. Architecto pariatur, inventore nulla reprehenderit, ullam aut ab amet dolor facilis dignissimos ea alias sint consequuntur!</p>
+            </div>
+        </section>
+
+        <section class="bloco2">
+            <div class="div-bloco2">
+                <img src="img/mb05.gif" alt="" class="img-bloco2">
+            </div>
+            <div class="div-bloco2">
+                <h2 class="titulo-bloco2">Título Bloco 2</h2>
+                <p class="p-bloco2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam adipisci deserunt sunt consequatur temporibus asperiores aut fugiat vero necessitatibus. Inventore eveniet enim amet iure velit reprehenderit, sit explicabo dignissimos.lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur nobis sint aliquam accusantium possimus modi vitae, accusamus porro. Debitis laudantium quisquam natus odit iure dolorem commodi cupiditate optio ipsa!
+                consequatur temporibus asperiores aut fugiat vero necessitatibus. Inventore eveniet enim amet iure velit reprehenderit, sit explicabo dignissimos.lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur nobis sint aliquam accusantium possimus modi vitae, accusamus porro. Debitis laudantium quisquam natus odit iure dolorem commodi cupiditate optio ipsa!
+                </p>
+            </div>
+        </section>
+     
+    <section class="bloco3">
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto01</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto02</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto03</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto04</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto05</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto06</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto07</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto08</h3>
+        </div>
+        <div class="div-bloco3">
+            <img src="img/img07.jpg" alt="" class="img-bloco3">
+            <h3 class="txt-bloco3">texto09</h3>
+        </div>
+    </section>
+
+
+
+    </main>
+
+
+
+ <script>
+     const menu = document.getElementById('icone-menu');
+     const link = document.getElementsByClassName('item-menu');
+
+     menu.addEventListener('click',()=>{
+         for(i=0;i<=link.length;i++){
+             link[i].classList.toggle('ativar');
+         }
+     })
+ </script>   
+</body>
+</html>
