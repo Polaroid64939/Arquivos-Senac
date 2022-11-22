@@ -1,0 +1,66 @@
+label{
+    display: block;
+    margin: 10px;
+    font-weight:bold;
+}
+form{
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(141, 139, 139);
+    background-color: rgb(218, 143, 3);
+}
+
+.center{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+}
+form{
+    display: block;  
+    margin: 0 auto;
+    width: 20%;
+  
+}
+h1{
+    text-align: center;
+}
+
+table{
+width: 45%;
+margin: 0 auto;
+background-color: bisque;
+}
+th{
+    background-color: rgb(199, 199, 196);
+}
+
+table,td,th{
+    border:  1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.box{
+    width: 20%;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 15px;
+}
+
+.box a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+.box> a:hover{
+    text-decoration: none;
+     color: rgb(233, 210, 6);
+}

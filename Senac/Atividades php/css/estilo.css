@@ -1,0 +1,19 @@
+label{
+    display: block;
+    margin: 10px;
+    font-weight:bold;
+}
+form{
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(141, 139, 139);
+    background-color: rgba(218, 3, 3, 0.746);
+}
+
+.center{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
