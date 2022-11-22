@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --rosa:#EA047E;
+            --laranja:#FF6D28;
+            --amarelo:#FCE700;
+            --azul-claro:#00F5FF;
+            --preto:#000;
+            --cinza:#EDEDED;
+        }
+        .container{
+            background-color: var(--laranja);
+            width: 100%;
+            display: grid;
+            grid-template-areas: 
+            "nav nav"
+            "header header"
+            "barra main"
+            "footer footer";
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 5vh 15vh 70vh 15vh;
+            gap:3px ;
+            text-align: center;
+            color: var(--azul-claro);
+        }
+        .header{
+            background-color: var(--rosa);
+            grid-area: header;
+        }
+        .menu{
+            background-color: var(--preto);
+            grid-area: header;
+        }
+        
+    </style>
+</head>
+<body class="container">
+    <nav class="menua">menu </nav>
+    <section>
+        bloco 1 de conteúdo
+    </section>
+    <section>
+        bloco 2 de conteúdo
+    </section>
+    <header class="header"> topo do site </in> </header>
+        <aside class="barra-lateral">
+            barra lateral
+        </aside>
+        <main class="main">
+            conteúdo (parte principal)
+        </main>
+        <footer class="folder">
+            rodapé
+        </footer>
+</body>
+</html>
