@@ -1,0 +1,38 @@
+.conteudo{
+    width:70%;
+    margin:15px auto;
+    background-color: rgb(203, 215, 216);
+    border: 1px solid black;
+    min-height: 140px;
+    padding: 10px;
+}
+
+.bloco{
+    width:32%;
+    float: left;
+    text-align: center;
+    height: auto;
+    margin: 5px;
+}
+.bloco:hover{
+    background-color: aqua;
+    color: darkblue;
+}
+.img-pag{
+    width: 180px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 20px;
+}
+.titulo-1{
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
