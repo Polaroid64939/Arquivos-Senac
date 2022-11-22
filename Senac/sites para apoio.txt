@@ -1,0 +1,10 @@
+Sites:
+https://www.w3schools.com/html/default.asp
+https://www.php.net/manual/pt_BR/index.php
+
+favicon
+https://www.favicon.cc/
+
+Banco de Imagens
+https://pixabay.com/pt/
+https://unsplash.com/
