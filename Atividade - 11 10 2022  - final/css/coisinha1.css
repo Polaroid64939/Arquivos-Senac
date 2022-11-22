@@ -1,0 +1,25 @@
+.coisinha1 {
+    width: 100%;
+    height: auto;
+
+    background-color: rgba(115, 3, 3, 0.986);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-coisinha1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    filter: hue-rotate(90deg);
+}
+
+.lista-coisinha1 {
+    display: flex;
+    list-style-type: none;
+}
+
+.item-coisinha1 {
+    padding: 15px;
+}

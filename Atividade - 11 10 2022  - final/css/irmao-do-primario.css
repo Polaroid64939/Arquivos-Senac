@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{width:100%;}
+@media screen  and (max-width:768px){
+    .cabecinha{flex-direction: column; width: 100vw;}
+    .lista-menu{flex-direction: column;text-align: center;}
+    #icone-menu{display: block;}
+    .item-menu{display: none;}
+    .ativar{display: block;}
+    .item-menu:hover{background-color: aquamarine; 
+        width:100vw ; color: black;  
+    }
+    .link-menu:hover{color: black;}
+    #icone-menu:hover{background-color: rgb(228, 228, 228);}
+    .carrossel{width: 100%; height: 50vh; position: relative;}
+    .link-carrossel{top: 90%; font-size: 1.2rem; text-align: center;}
+    .kit, .bolos{grid-template-columns: 1fr;}
+    .coisinha1{flex-direction: column; justify-content: center; height: auto;}
+}
