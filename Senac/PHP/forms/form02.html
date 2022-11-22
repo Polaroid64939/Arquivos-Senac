@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <form action="../script/scriptForm02.php" method="POST">
+    <label for="">Nome do Produto:</label>
+    <input type="text" name="produto">
+    <label for="">Data de Validade</label>
+    <input type="date" name="validade">
+    <label for="">Quantidade</label>
+    <input type="text" name="qtd">
+    <label for="">Categoria:</label>
+    <input type="radio" name="categoria" value="perecível">Perecível
+    <input type="radio" name="categoria" value="nãoperecivel">Não Perecível
+    <input type="submit" value="Cadastrar" class="center">
+    <label for="">Unidade de medida</label>
+    <select name="unidade">
+        <option value="kg">KG</option>
+        <option value="litro">Litro</option>
+        <option value="metro">Metro</option>
+        <option value="unidade">Unidade</option>
+        <option value="outros">Outros</option>
+    </select>
+</form>
+
+</body>
+</html>
