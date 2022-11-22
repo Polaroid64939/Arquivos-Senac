@@ -1,0 +1,27 @@
+label{
+    display: block;
+}
+form{
+    display: block;  
+    margin: 0 auto;
+    width: 50%;
+  
+}
+h1{
+    text-align: center;
+}
+
+table{
+width: 85%;
+margin: 0 auto;
+background-color: bisque;
+}
+th{
+    background-color: rgb(199, 199, 196);
+}
+
+table,td,th{
+    border:  1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
