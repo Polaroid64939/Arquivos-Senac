@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif
+    ;
+}
+h3{
+    padding-top: 2em;
+}
+h4{
+    color: #454545;
+}
+
+.bg-primary-color {
+    background-color: white;
+}
+
+.bg-secondary-color {
+    background-color: aliceblue;
+}
+
+.bg-dark-color {
+    background-color: #050505;
+}
+
+.primary-color {
+    color: #000000;
+}
+
+.secondary-color {
+    color: #616161;
+}
+.btn{
+    height: 2.5em;
+}
+
+/* NAVBAR */
+
+#navbar {
+    border-bottom: 1px solid black;
+}
+
+#navbar a:hover {
+    color: #454545;
+}
+
+#navbar a.active {
+    border-bottom: 1px solid black;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+}
+
+#drop {
+    color: #7a7a7a;
+}
+
+.nav-item {
+    display: flex;
+    margin: 0 1em;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+/* Mini Banners */
+
+h3{
+    padding-left: 15px;
+}
+h5 {
+    margin-top: -1em;
+}
+
+#mini-banners {
+    margin-bottom: 4em;
+}
+
+#mini-banners .card {
+    margin-top: 2em;
+    padding: 2em 0.3em;
+}
+.card-img{
+    object-fit: cover;
+}
+
+/* Footer Top */
+#footer{
+    padding: 3em 2em;
+}
+#footer-top{
+    margin-bottom: 2em;
+}
+#footer-top, #footer-top i{
+    color: #ffffff;
+}
+#social-icons{
+    text-align: right;
+}
+#social-icons{
+    margin-right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#social-icons i:hover{
+    color: #7a7a7a;
+    
+}
+#footer-details{
+    margin-bottom: 3em;
+}
+#footer-details h4{
+    color: #ffffff;
+    margin-bottom: 1.5em;
+}
+#footer-bottom{
+    border-top: 1px solid gray;
+    padding-top: 2em;
+}
